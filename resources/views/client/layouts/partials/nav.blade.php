@@ -5,7 +5,8 @@
             aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse" id="navbarCollapse">
+        <div class="d-flex">
+        <div class="collapse navbar-collapse " id="navbarCollapse">
             <ul class="navbar-nav">
                 <li class="nav-item active">
                     <a class="nav-link" aria-current="page" href="/">Trang chủ</a>
@@ -27,5 +28,14 @@
                 </li>
             </ul>
         </div>
+        <div>
+            <a class="btn btn-danger" href="{{  route('login')  }}"> đăng nhập</a>
+        </div>
+        </div>
     </div>
 </nav>
+@if (session('status'))
+        <div class="alert alert-success">
+            {{ session('status') }}
+        </div>
+    @endif

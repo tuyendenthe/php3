@@ -15,7 +15,7 @@ class posts extends Model
         'body2',
         'img',
         'dateCreated',
-        'idTag',
+        
         'idDirectory',
         'narura',
 

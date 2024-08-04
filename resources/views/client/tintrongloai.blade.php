@@ -11,7 +11,7 @@
         <div class="border">
             <div class="m-1 mt-2 ms-3">
                 <div class="d-flex">
-                    <img src="https://th.bing.com/th/id/OIP.cUuD1xJjJQkcjfkbOkrF8QHaE_?rs=1&pid=ImgDetMain"
+                    <img src="{{ \Storage::url($item->img) }}"
                         alt="" height="150px" width="150px">
                     <div class="m-2">
                         <h5 class="m-1">{{ $item->title }}</h5>

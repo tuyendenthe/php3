@@ -1,7 +1,7 @@
 <div class="d-flex">
     <div class="m-5 row-3 w-50">
         <h2>Tin nổi bật</h2>
-        <img src="https://th.bing.com/th/id/OIP.-ubIUr7C3Y85qCrp2gYMewHaEL?w=850&h=479&rs=1&pid=ImgDetMain"
+        <img src="{{ \Storage::url($top->img) }}"
             alt="" width="700px">
         <a class="text-decoration-none" href="{{ route('post.detail', $top->id) }}"> <h3>{{ $top->title }}</h3></a>
 
@@ -18,7 +18,7 @@
             <div class="border mb-3">
                 <div class="m-1 mt-2 ms-3">
                     <div class="d-flex">
-                        <img src="https://th.bing.com/th/id/OIP.cUuD1xJjJQkcjfkbOkrF8QHaE_?rs=1&pid=ImgDetMain"
+                        <img src="{{ \Storage::url($item->img) }}"
                             alt="" height="150px" width="150px">
                         <div class="m-2">
                             <h5 class="m-1">{{ $item->title}}</h5>
